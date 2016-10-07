@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Cursive'; 
+  src: url('fonts/satisfy.regular.ttf')  format('truetype');
+}
+
+html { 
+  /*background: #484646; */
+  background-image: url(../images/wood.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    margin: 0;
+    height: 94%;
+    width: 100%;
+    /*overflow: hidden;*/
+    /*font-family: 'Cursive', Fallback, sans-serif;*/
+}
+
+#main-heading {
+  width: 100%;
+}
+
+#title {
+  /*width: 90%;*/
+  text-align: center;
+  /*margin-left: 5%;*/
+  color: black;
+  /*background: url(../images/parchmentnew.jpg) no-repeat center center fixed;*/
+  padding: 5px;
+  border-radius: 7px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    /*overflow: hidden;*/
+}
+
+.leftpart {
+    min-width: 20%; 
+    float: left;
+    /*position: fixed;*/
+    /*overflow: auto;*/
+    /*padding-left: 5px;*/
+    /*height: 100%;*/
+    background: url(../images/parchmentnew.jpg) no-repeat center center fixed;
+    border-radius: 5px;
+    /*background-size: 100% 100%;*/
+}
+
+.rightpart {
+     margin-left: 22%;
+     margin-right: 10px;
+     /*padding-left: 5px;*/
+     /*height: 100%;*/
+     border-radius: 5px;
+     background: url(../images/parchmentnew.jpg) no-repeat center center fixed;
+     background-size: cover;
+}
+
+.stuff {
+    padding: 10px;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    height: 40%;
+    width: 35%;
+    transition: all .2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.slicknav-menu {
+    display : none;
+}
+@media screen and (max-width : 40em) {
+  #dance {
+    display: none;
+  }
+  #musicals {
+    display: none;
+  }
+  #fashion {
+    display: none;
+  }
+  #sport {
+    display: none;
+  }
+  #lit {
+    display: none;
+  }
+  #quiz {
+    display: none;
+  }
+  #beach {
+    display: none;
+  }
+  .slicknav-menu {
+    display : block;
+  }
+}
+#dance {
+  display: none;
+}
+#musicals {
+  display: none;
+}
+#fashion {
+  display: none;
+}
+#sport {
+  display: none;
+}
+#lit {
+  display: none;
+}
+#quiz {
+  display: none;
+}
+#beach {
+  display: none;
+}
+
+.slicknav_menu {
+  background: none!important;
+}
+
+.slicknav_btn {
+  width: 100%;
+  background: none!important;
+}
+
+.slicknav_menutxt {
+  margin-left: 25%;
+  color: black!important;
+  text-shadow: none!important;
+}
+
+.slicknav_icon {
+  float: right!important;
+}
+
+.slicknav_icon-bar {
+  background-color: black!important;
+}
+
+.slicknav_parent .slicknav_open {
+  color: black!important;
+}
+
+.slicknav_nav .slicknav_row {
+  color: black!important;
+}

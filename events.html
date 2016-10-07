@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Incident '16</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="js/contents.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/tracking.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="orig">
+
+		<div class="container">
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="icon icon-world">All Categories</h2>
+						<ul>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('pro')">Pronites</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Pronites</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" id="encore" onclick="myFunc('encore')">Encore</a>
+										</li>
+										<li><a class="icon icon-tv" href="#" id="western" onclick="myFunc('western')">Western Nights</a>
+										</li>
+										<li><a class="icon icon-tv" href="#" id="dj" onclick="myFunc('dj')">DJ Nights</a>
+										</li>
+										<li><a class="icon icon-tv" href="#" id="dj" onclick="myFunc('comedy')">Comedy Explosion</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('fas')">Fashion</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Fashion</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" id="hau_ab" onclick="myFunc('hau_ab')">Haute Couture</a>
+										<!-- <div class="mp-level">
+												<h2>Haute Couture</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="hau_ab" onclick="myFunc('hau_ab')">About</a></li>
+							<li><a href="#" id="hau_rul" onclick="myFunc('hau_rul')">Rules</a></li>
+							<li><a href="#" id="hau_reg" onclick="myFunc('hau_reg')">Registration</a></li>
+							<li><a href="#" id="hau_pri" onclick="myFunc('hau_pri')">Prizes</a></li>
+							<li><a href="#" id="hau_con" onclick="myFunc('hau_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="princess" onclick="myFunc('princess')">Campus Princess</a></li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('dan')">Dance</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Dance</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" id="tan_ab" onclick="myFunc('tan_ab')">Tandav</a>
+										<!-- <div class="mp-level">
+												<h2>Tandav</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="tan_ab" onclick="myFunc('tan_ab')">About</a></li>
+								<li><a href="#" id="tan_rul" onclick="myFunc('tan_rul')">Rules</a></li>
+								<li><a href="#" id="tan_reg" onclick="myFunc('tan_reg')">Registration</a></li>
+								<li><a href="#" id="tan_pri" onclick="myFunc('tan_pri')">Prizes</a></li>
+								<li><a href="#" id="tan_con" onclick="myFunc('tan_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="step_ab" onclick="myFunc('step_ab')">Step Up</a>
+											<!-- <div class="mp-level">
+												<h2>Step Up</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="step_ab" onclick="myFunc('step_ab')">About</a></li>
+								<li><a href="#" id="step_rul" onclick="myFunc('step_rul')">Rules</a></li>
+								<li><a href="#" id="step_reg" onclick="myFunc('step_reg')">Registration</a></li>
+								<li><a href="#" id="step_pri" onclick="myFunc('step_pri')">Prizes</a></li>
+								<li><a href="#" id="step_con" onclick="myFunc('step_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="prom_ab" onclick="myFunc('prom_ab')">Hip Hop International</a>
+											<!-- <div class="mp-level">
+												<h2>Promenade</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="prom_ab" onclick="myFunc('prom_ab')">About</a></li>
+								<li><a href="#" id="prom_rul" onclick="myFunc('prom_rul')">Rules</a></li>
+								<li><a href="#" id="prom_reg" onclick="myFunc('prom_reg')">Registration</a></li>
+								<li><a href="#" id="prom_pri" onclick="myFunc('prom_pri')">Prizes</a></li>
+								<li><a href="#" id="prom_con" onclick="myFunc('prom_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('mus')">Musicals</a>
+								<div class="mp-level">
+									<h2 class="icon icon-display">Musicals</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="lead_ab" onclick="myFunc('lead_ab')">Leading Note</a>
+										</li>
+										
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="band_ab" onclick="myFunc('band_ab')">Bandish</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="pul_ab" onclick="myFunc('pul_ab')">Pulse</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="raag_ab" onclick="myFunc('raag_ab')">Incident Idol</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="unp_ab" onclick="myFunc('unp_ab')">Unplugged(Acoustics)</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="dhw_ab" onclick="myFunc('dhw_ab')">Dhwanik(Acoustics)</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="aca_ab" onclick="myFunc('aca_ab')">Acapella</a>
+											
+										</li>
+
+
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('spo')">Sports</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Sports</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" id="slam_ab" onclick="myFunc('slam_ab')">Slam Dunk</a>
+										<!-- <div class="mp-level">
+												<h2>Slam Dunk</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="slam_ab" onclick="myFunc('slam_ab')">About</a></li>
+								<li><a href="#" id="slam_rul" onclick="myFunc('slam_rul')">Rules</a></li>
+								<li><a href="#" id="slam_reg" onclick="myFunc('slam_reg')">Registration</a></li>
+								<li><a href="#" id="slam_pri" onclick="myFunc('slam_pri')">Prizes</a></li>
+								<li><a href="#" id="slam_con" onclick="myFunc('slam_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="kab_ab" onclick="myFunc('kab_ab')">Chakravyuh</a>
+										<!-- <div class="mp-level">
+												<h2>Chakravyuh</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="kab_ab" onclick="myFunc('kab_ab')">About</a></li>
+								<li><a href="#" id="kab_rul" onclick="myFunc('kab_rul')">Rules</a></li>
+								<li><a href="#" id="kab_reg" onclick="myFunc('kab_reg')">Registration</a></li>
+								<li><a href="#" id="kab_pri" onclick="myFunc('kab_pri')">Prizes</a></li>
+								<li><a href="#" id="kab_con" onclick="myFunc('kab_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('work')">Workshops</a>
+								<div class="mp-level">
+									<h2 class="icon icon-display">Workshops</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="work_dan" onclick="myFunc('work_dan')">Dance Workshop</a>
+										</li>
+										
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="work_for" onclick="myFunc('work_for')">Forensics</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="work_fen" onclick="myFunc('work_fen')">Fencing</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="work_street" onclick="myFunc('work_street')">Street Fighting</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="work_hyp" onclick="myFunc('work_hyp')">Hypnotism</a>
+											
+										</li>
+
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="work_ymo" onclick="myFunc('work_ymo')">YMO 2016</a>
+											
+										</li>
+
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('game')">Gaming</a>
+								<div class="mp-level">
+									<h2 class="icon icon-display">Gaming</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="fifa" onclick="myFunc('fifa')">FIFA</a>
+										</li>
+										
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="cs" onclick="myFunc('cs')">Counter Strike</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="nfsmw" onclick="myFunc('nfsmw')">NFS Most Wanted</a>
+											
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#" id="dota" onclick="myFunc('dota')">DOTA 2</a>
+											
+										</li>
+
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('fine')">Fine Arts</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Fine Arts</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#">Workshops</a>
+										<div class="mp-level">
+												<h2>Workshops</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="charcoal" onclick="myFunc('charcoal')">Charcoal Painting Workshop</a></li>
+								<li><a href="#" id="line" onclick="myFunc('line')">Line Drawing Workshop</a></li>
+								<li><a href="#" id="clay" onclick="myFunc('clay')">Clay Modelling</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="icon icon-tv" href="#">Competitions</a>
+										<div class="mp-level">
+												<h2>Competitions</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="doodle" onclick="myFunc('doodle')">Doodle for Incident</a></li>
+								<li><a href="#" id="paf" onclick="myFunc('paf')">Past and Future</a></li>
+								<li><a href="#" id="bart" onclick="myFunc('bart')">Body Art</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="icon icon-tv" href="#" id="kala" onclick="myFunc('kala')">Kalakriti</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('lit')">Lit Events</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Lit Events</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#">English Events</a>
+										<div class="mp-level">
+									<h2 class="icon icon-news">English Events</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" id="jam_ab" onclick="myFunc('jam_ab')">JAM (Just-a-Minute)</a>
+										<!-- <div class="mp-level">
+												<h2>JAM (Just-a-Minute)</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="jam_ab" onclick="myFunc('jam_ab')">About</a></li>
+									<li><a href="#" id="jam_rul" onclick="myFunc('jam_rul')">Rules</a></li>
+									<li><a href="#" id="jam_reg" onclick="myFunc('jam_reg')">Registration</a></li>
+									<li><a href="#" id="jam_pri" onclick="myFunc('jam_pri')">Prizes</a></li>
+									<li><a href="#" id="jam_con" onclick="myFunc('jam_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<!-- <li><a class="icon icon-tv" href="#">Debate</a>
+											<div class="mp-level">
+												<h2>Debate</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="deb_ab" onclick="myFunc('deb_ab')">About</a></li>
+									<li><a href="#" id="deb_rul" onclick="myFunc('deb_rul')">Rules</a></li>
+									<li><a href="#" id="deb_reg" onclick="myFunc('deb_reg')">Registration</a></li>
+									<li><a href="#" id="deb_pri" onclick="myFunc('deb_pri')">Prizes</a></li>
+									<li><a href="#" id="deb_con" onclick="myFunc('deb_con')">Contact</a></li>
+												</ul>
+											</div>
+										</li> -->
+										<!-- <li><a class="icon icon-tv" href="#">Up Stage Impromptu</a>
+											<div class="mp-level">
+												<h2>Up Stage Impromptu</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="imp_ab" onclick="myFunc('imp_ab')">About</a></li>
+									<li><a href="#" id="imp_rul" onclick="myFunc('imp_rul')">Rules</a></li>
+									<li><a href="#" id="imp_reg" onclick="myFunc('imp_reg')">Registration</a></li>
+									<li><a href="#" id="imp_pri" onclick="myFunc('imp_pri')">Prizes</a></li>
+									<li><a href="#" id="imp_con" onclick="myFunc('imp_con')">Contact</a></li>
+												</ul>
+											</div>
+										</li> -->
+										<li><a class="icon icon-tv" href="#" id="lone_ab" onclick="myFunc('lone_ab')">Lone Wolf</a>
+											<!-- <div class="mp-level">
+												<h2>Lone Wolf</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="lone_ab" onclick="myFunc('lone_ab')">About</a></li>
+									<li><a href="#" id="lone_rul" onclick="myFunc('lone_rul')">Rules</a></li>
+									<li><a href="#" id="lone_reg" onclick="myFunc('lone_reg')">Registration</a></li>
+									<li><a href="#" id="lone_pri" onclick="myFunc('lone_pri')">Prizes</a></li>
+									<li><a href="#" id="lone_con" onclick="myFunc('lone_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="spent_ab" onclick="myFunc('spent_ab')">SpEnt Quiz</a>
+											<!-- <div class="mp-level">
+												<h2>SpEnt Quiz</h2>
+												<a class="mp-back" href="#" >back</a>
+												<ul>
+													<li><a href="#" id="spent_ab" onclick="myFunc('spent_ab')">About</a></li>
+									<li><a href="#" id="spent_rul" onclick="myFunc('spent_rul')">Rules</a></li>
+									<li><a href="#" id="spent_reg" onclick="myFunc('spent_reg')">Registration</a></li>
+									<li><a href="#" id="spent_pri" onclick="myFunc('spent_pri')">Prizes</a></li>
+									<li><a href="#" id="spent_con" onclick="myFunc('spent_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="bt_ab" onclick="myFunc('bt_ab')">Biz-Tech Quiz</a>
+											<!-- <div class="mp-level">
+												<h2>Biz-Tech Quiz</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="bt_ab" onclick="myFunc('bt_ab')">About</a></li>
+									<li><a href="#" id="bt_rul" onclick="myFunc('bt_rul')">Rules</a></li>
+									<li><a href="#" id="bt_reg" onclick="myFunc('bt_reg')">Registration</a></li>
+									<li><a href="#" id="bt_pri" onclick="myFunc('bt_pri')">Prizes</a></li>
+									<li><a href="#" id="bt_con" onclick="myFunc('bt_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="gen_ab" onclick="myFunc('gen_ab')">General Quiz</a>
+											<!-- <div class="mp-level">
+												<h2>General Quiz</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="gen_ab" onclick="myFunc('gen_ab')">About</a></li>
+									<li><a href="#" id="gen_rul" onclick="myFunc('gen_rul')">Rules</a></li>
+									<li><a href="#" id="gen_reg" onclick="myFunc('gen_reg')">Registration</a></li>
+									<li><a href="#" id="gen_pri" onclick="myFunc('gen_pri')">Prizes</a></li>
+									<li><a href="#" id="gen_con" onclick="myFunc('gen_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										<li><a class="icon icon-tv" href="#" id="ind_ab" onclick="myFunc('ind_ab')">India Quiz</a>
+											<!-- <div class="mp-level">
+												<h2>India Quiz</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#" id="ind_ab" onclick="myFunc('ind_ab')">About</a></li>
+									<li><a href="#" id="ind_rul" onclick="myFunc('ind_rul')">Rules</a></li>
+									<li><a href="#" id="ind_reg" onclick="myFunc('ind_reg')">Registration</a></li>
+									<li><a href="#" id="ind_pri" onclick="myFunc('ind_pri')">Prizes</a></li>
+									<li><a href="#" id="ind_con" onclick="myFunc('ind_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+								
+										</li>
+										
+									</ul>
+								</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('bea')">Beach Events</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Beach Events</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" id="war_ab" onclick="myFunc('war_ab')">War of DJ's</a>
+										<!-- <div class="mp-level">
+												<h2>War of DJ's</h2>
+												<a class="mp-back" href="#" >back</a>
+												<ul>
+													<li><a href="#" id="war_ab" onclick="myFunc('war_ab')">About</a></li>
+								<li><a href="#" id="war_rul" onclick="myFunc('war_rul')">Rules</a></li>
+								<li><a href="#" id="war_reg" onclick="myFunc('war_reg')">Registration</a></li>
+								<li><a href="#" id="war_pri" onclick="myFunc('war_pri')">Prizes</a></li>
+								<li><a href="#" id="war_con" onclick="myFunc('war_con')">Contact</a></li>
+												</ul>
+											</div> -->
+										</li>
+										
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('photo')">Photography</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Photography</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" id="photography" onclick="myFunc('photography')">Expose</a>
+										</li>
+										
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#" onclick="change_bg('glad')">Special Attractions</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Special Attractions</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a class="icon icon-tv" href="#" onclick="myFunc('gladiator')">Gladiator</a>
+										</li>
+										<li><a class="icon icon-tv" href="#" onclick="myFunc('lounge')">Lounge of Legends</a>
+										</li>
+										<li><a class="icon icon-tv" href="#" onclick="myFunc('midsummer')">Midsummer Knight</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+						</ul>
+							
+					</div>
+				</nav>
+				<!-- /mp-menu -->
+
+				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+					<div class="scroller-inner">
+						<!-- Top Navigation -->
+						<div class="codrops-top clearfix">
+							<a class="codrops-icon codrops-icon-prev" href="http://www.incident.co.in"><span>INCIDENT '16</span></a>
+							<span class="right"><a class="codrops-icon codrops-icon-drop" target="_blank" href="https://docs.google.com/spreadsheets/d/1aSMI78x0N2qH8Yw6_CwhP93Y2zA73tCyDcOVYcVjJ6g/edit?usp=sharing"><span>SCHEDULE</span></a><a class="codrops-icon codrops-icon-drop" target="_blank" href="http://thecollegefever.com/incident"><span>REGISTER</span></a></span>
+						</div>
+						<header class="codrops-header">
+							<h1>Events</h1>
+							<p style="width:100%;text-align:right;margin-top:-15px;">For queries, contact<br />Bhaskar : +91-8105920053<br />Satish : +91-8867514656</p>
+						</header>
+						<div class="content clearfix">
+							<div class="block block-40 clearfix">
+								<p><a href="#" id="trigger" class="menu-trigger"><!-- Menu --></a></p>
+								<!-- <nav class="codrops-demos">
+									<a href="index.html">Demo 1: Overlapping levels</a>
+									<a href="index2.html">Demo 2: Covering levels</a>
+									<a class="current-demo" href="index3.html">Demo 3: Overlapping levels with back links</a>
+								</nav> -->
+							</div>
+							<div class="block block-60">
+								<p>Incident is the exalted annual cultural festival of National Institute of Technology Karnataka, Surathkal. The fest is usually celebrated for five days in the vicinity of the ides of March. The fest, an initiative of the NITK students led by Umar Teekay in the 1980s, has grown exponentially every year; raising the bar to new heights every year. Incident brings together students from colleges from various regions of the country, organizing several exhilaratingly competetive events besides pro-shows by renowned artists like KK, Sunidhi Chauhan, Salim-Sulieman and Vishal-Shekar. Incident hosts a plethora of events ranging from drama, dance, music, art, literary and personality contests to beach events and sports.</p>
+								<p style="border: 1px solid; padding-top: 5px; border-radius: 5px;">NOTE : College ID card should be with the fest participant at all times and he/she must show it on demand of Organising Committee members or Officials.</p>
+							</div>
+							<!-- <div class="info">
+								<p>If you enjoyed this you might also like:</p>
+								<p><a href="http://goo.gl/JLJ4v5">Responsive Multi-Level Menu</a></p>
+								<p><a href="http://goo.gl/qjbq9Y">Google Nexus Website Menu</a></p>
+							</div> -->
+						</div>
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+
+			</div><!-- /pusher -->
+		</div><!-- /container -->
+
+		<script src="js/classie.js"></script>
+		<script src="js/mlpushmenu.js"></script>
+		<script>
+			var myMenu = new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+
+			function myFunc(id) {
+				myMenu._resetMenu();
+				document.getElementsByClassName('block block-60')[0].innerHTML = events[id];
+				$('ul.tabs li').click(function(){
+					console.log('yes');
+					var tab_id = $(this).attr('data-tab');
+
+					$('ul.tabs li').removeClass('current');
+					$('.tab-content').removeClass('current');
+
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				});
+			}
+
+			function change_bg(id) {
+				$(document.body).removeClass().addClass(id);
+			}
+
+			// $(document).ready(function(){
+				// console.log('here');
+				// $('ul.tabs li').click(function(){
+				// 	console.log('yes');
+				// 	var tab_id = $(this).attr('data-tab');
+
+				// 	$('ul.tabs li').removeClass('current');
+				// 	$('.tab-content').removeClass('current');
+
+				// 	$(this).addClass('current');
+				// 	$("#"+tab_id).addClass('current');
+				// });
+
+			// });
+		</script>
+	</body>
+</html>

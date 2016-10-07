@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Cursive0'; 
+  src: url('fonts/satisfy.regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Cursive'; 
+  src: url('fonts/theleagueof-sorts-mill-goudy-0607289/OFLGoudyStMTT-Italic.ttf')  format('truetype');
+}
+
+body { 
+    margin: 0; 
+    overflow: hidden;
+}
+
+#myInstructionsModal {
+    overflow: auto;
+    width: 50%;
+    height: 20%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    /*background-image: url(../images/parchment.jpg);*/
+}
+
+.modal {
+    overflow: auto;
+    /*background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);*/
+    /*background-image: url(../images/parchment.jpg);*/
+    color: white;
+}
+
+
+
+.modal-content {
+	position: relative;
+    /*background-color: #fefefe;*/
+    font-family: 'Cursive', Fallback, sans-serif;
+    margin: auto;
+    padding: 0;
+    /*border: 1px solid #888;*/
+    width: 90%;
+    height: 100%;
+    font-weight: bolder;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+
+.modal-header {
+	padding: 2px 16px;
+    /*background-color: #fefefe;*/
+    /*color: black;*/
+    width: 100%;
+    height: 20%;
+}
+
+.modal-body {
+	padding: 2px 16px;
+    /*color: black;*/
+    width: 100%;
+    height: 70%;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+    /*background-color: #fefefe;*/
+    /*color: black;*/
+    width: 100%;
+    height: 10%;
+}
+
+.close {
+	color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.writing {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    /*padding: 10px;*/
+    /*height: 100%;*/
+}
+
+li {
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: #000;
+    /*background-color: #f1f1f1;*/
+    background-color: white;
+    color: black;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active1 {
+    background-color: black;
+    color: white;
+}
+
+li a:hover:not(.active1) {
+    background-color: white;
+    color: black;
+}
+
+.hor {
+    width: 100%;
+    float: left;
+}
+
+.leftpart {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.rightpart {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+p {
+    font-size: 18px;
+}
+
+#cospon {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#rowtwo {
+    height: 300px;
+    width: 100%;
+}
+
+#dripar {
+    float: left;
+    width: 50%;
+}
+
+#icecre {
+    float: left;
+    width: 50%;
+}
+
+#rowthree {
+    height: 230px;
+    width: 100%;
+}
+
+#bankin img {
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: inherit;
+}
+
+#rowfour {
+    height: 400px;
+    width: 100%;
+}
+
+/*#musstr {
+    margin: 5%;
+}
+
+#finedu {
+    margin: 5%;
+}*/
+
+#associ {
+    height: 300px;
+}
+
+#associ img {
+    float: left;
+    width: 17%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.container_sponsor img {
+    height: 200px;
+}
+
+.container_contact {
+    text-align: center;
+}
+
+#chief {
+    width: 100%;
+}
+
+#coord {
+    float: left;
+    width: 25%;
+    word-wrap: break-word;
+}
+
+#joint {
+    width: 100%;
+}
+
+#sec {
+    float: left;
+    width: 33%;
+    word-wrap: break-word;
+}
+
+#events {
+    width: 100%;
+}
+
+#coord1 {
+    float: left;
+    width: 50%;
+    word-wrap: break-word;
+}

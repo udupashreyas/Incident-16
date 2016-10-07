@@ -1,0 +1,372 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('fonts/codropsicons/codropsicons.eot');
+	src:url('fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+@font-face {
+  font-family: 'Cursive'; 
+  src: url('fonts/theleagueof-sorts-mill-goudy-0607289/OFLGoudyStMTT-Italic.ttf')  format('truetype');
+}
+
+/*html {
+	background-image: url(../images/bg2.jpg);
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}*/
+
+body {
+	/*background: #34495e;*/
+	/*background-image: url(../images/bg2.jpg);*/
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	height: 100%;
+  	width: 100%;
+	color: #fff;
+	/*font-weight: 300;*/
+	/*font-family: 'Lato', Calibri, Arial, sans-serif;*/
+	font-family: 'Cursive', Fallback, sans-serif;
+}
+
+.orig {
+	background-image: url(../images/bg2.jpg);
+}
+
+.mus {
+	background-image: url(../images/0musicals.jpg);
+}
+
+.dan {
+	background-image: url(../images/bg2.jpg);
+}
+
+.fas {
+	background-image: url(../images/bg7.jpg);
+}
+
+.lit {
+	background-image: url(../images/bg1.jpg);
+}
+
+.spo {
+	background-image: url(../images/bg3.jpg);
+}
+
+.bea {
+	background-image: url(../images/0beach.jpg);
+}
+
+.pro {
+	background-image: url(../images/bg5.jpg);
+}
+
+.glad {
+	background-image: url(../images/gladiator.jpg);
+}
+
+.fine {
+	background-image: url(../images/fineart.jpg);
+}
+
+.work {
+	background-image: url(../images/bg1.jpg);
+}
+
+.game {
+	background-image: url(../images/bg1.jpg);
+}
+
+.photo {
+	background-image: url(../images/AmritaBeach.jpg);
+}
+
+a {
+	text-decoration: none;
+	color: #f7f7f7;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+	outline: none;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.codrops-header,
+.codrops-top {
+	/*font-family: 'Lato', Arial, sans-serif;*/
+	font-family: 'Cursive', Fallback, sans-serif;
+}
+
+.codrops-header {
+	margin: 0 auto;
+	padding: 2em;
+	/*background: rgba(0,0,0,0.01);*/
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.625em;
+	line-height: 1.3;
+}
+
+.codrops-header span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 60%;
+	opacity: 0.7;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	/*background: #91cfa1;*/
+	/*background: rgba(255, 255, 255, 0.1);*/
+	text-transform: uppercase;
+	font-size: 0.69em;
+	/*line-height: 2.2;*/
+	line-height: 5;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding-top: 1em;
+	font-size: 1.1em;
+}
+
+.codrops-demos a {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0.5em 0.5em 0.5em 1.9em;
+	padding: 1em 1.1em;
+	width: 280px;
+	outline: none;
+	color: #fff;
+	background: #336ca6;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	opacity: 0.6;
+}
+
+.content {
+	padding: 0em 2em;
+	/*padding: 4em;*/
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.block {
+	float: left;
+	padding: 1em 3em;
+}
+
+.block-40 {
+	/*width: 40%;*/
+	width: 15%;
+	/*background-color: rgba(0,0,0,0.6);
+	color: white;
+	border-radius: 10px;*/
+}
+
+.block-60 {
+	/*width: 60%;*/
+	margin-left: 5%;
+	width: 80%;
+	/*background-color: rgba(0,0,0,0.6);
+	color: white;
+	border-radius: 10px;*/
+}
+
+.block-40 p {
+	margin: 0px;
+	padding: 2px;
+}
+
+.block-60 p {
+	margin: 0;
+	padding: 0 1em 0.6em;
+	/*font-size: 1.8em;*/
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+.info {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 3em;
+	clear: both;
+	padding-top: 3em;
+	color: rgba(255,255,255,0.5);
+}
+
+.info a {
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+.info a:hover {
+	color: #336ca6;
+}
+
+@media screen and (max-width: 69em) {
+	.block {
+		float: none;
+		width: 100% !important;
+		padding: 1em;
+	}
+}
+
+@media screen and (max-width: 25em) {
+
+	body {
+		font-size: 80%;
+	}
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+h2 {
+	color : white!important;
+}
+
+#navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #ffffff;
+	height: 35px;
+	text-align: center;
+	padding-top: 15px;
+	/* Adds shadow to the bottom of the bar */
+	-webkit-box-shadow: 0px 0px 8px 0px #000000;
+	-moz-box-shadow: 0px 0px 8px 0px #000000;
+	box-shadow: 0px 0px 8px 0px #000000;
+	/* Adds the transparent background */
+	background-color: rgba(1, 1, 1, 0.8);
+	color: rgba(1, 1, 1, 0.8);
+}
+#navigation a {
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	color: gray;
+}
+
+#princess_img {
+	width: 100%;
+	height: 400px;
+} 
+
+.mp-menu ul li > a {
+	padding: 0em 1em 0.5em 1.8em!important;
+	font-size: 1.2em!important;
+}
+
+ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: none;
+			/*color: #222;*/
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.current{
+			/*background: #ededed;*/
+			/*color: #222;*/
+			background: rgba(0,0,0,0.6);
+		}
+
+		.tab-content{
+			display: none;
+			/*background: #ededed;*/
+			background: rgba(0,0,0,0.6);
+			padding: 15px;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}

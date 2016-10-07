@@ -1,0 +1,11 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl RockForm02
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.447680 0.285438 0.156065
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1

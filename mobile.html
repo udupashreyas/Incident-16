@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Incident '16</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/custombox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/withoutfold.css" />
+	<style type="text/css">
+		@font-face {
+		  font-family: 'Cursive'; 
+		  src: url('css/fonts/theleagueof-sorts-mill-goudy-0607289/OFLGoudyStMTT-Italic.ttf')  format('truetype');
+		}
+
+		@font-face {
+			font-family:main;
+			src:url('css/fonts/DK%20Northumbria.otf');
+		}
+
+		html {
+			height: 100%;
+			width: 100%;
+		}
+
+		body{
+			-webkit-background-size: cover;
+		  	-moz-background-size: cover;
+		  	-o-background-size: cover;
+		  	background-size: cover;
+		  	height: 100%;
+		  	width: 100%;
+			color: #fff;
+			background-image: url(images/background.jpg);
+			background-attachment: fixed;
+			/*margin-top: 10px;*/
+			/*font-family: 'Trebuchet MS', serif;*/
+			line-height: 1.6;
+			font-family: 'Cursive', Fallback, sans-serif;
+			margin: 0px;
+			overflow: scroll;
+		}
+
+		.btn_con {
+			height: 10%;
+		}
+ 
+
+		.myButton {
+			-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+			-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+			box-shadow: 0px 0px 0px 2px #9fb4f2;
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #989e4a), color-stop(1, #8c641e));
+			background:-moz-linear-gradient(top, #989e4a 5%, #8c641e 100%);
+			background:-webkit-linear-gradient(top, #989e4a 5%, #8c641e 100%);
+			background:-o-linear-gradient(top, #989e4a 5%, #8c641e 100%);
+			background:-ms-linear-gradient(top, #989e4a 5%, #8c641e 100%);
+			background:linear-gradient(to bottom, #989e4a 5%, #8c641e 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#989e4a', endColorstr='#8c641e',GradientType=0);
+			background-color:#989e4a;
+			-moz-border-radius:10px;
+			-webkit-border-radius:10px;
+			border-radius:10px;
+			border:1px solid #4e6096;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Arial;
+			font-size:19px;
+			padding:12px 76px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #283966;
+		}
+
+		.myButton:hover {
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8c641e), color-stop(1, #989e4a));
+			background:-moz-linear-gradient(top, #8c641e 5%, #989e4a 100%);
+			background:-webkit-linear-gradient(top, #8c641e 5%, #989e4a 100%);
+			background:-o-linear-gradient(top, #8c641e 5%, #989e4a 100%);
+			background:-ms-linear-gradient(top, #8c641e 5%, #989e4a 100%);
+			background:linear-gradient(to bottom, #8c641e 5%, #989e4a 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8c641e', endColorstr='#989e4a',GradientType=0);
+			background-color:#8c641e;
+		}
+
+		.myButton:active {
+			position:relative;
+			top:1px;
+		}
+
+		.btn_con {
+			margin : 0 auto;
+			text-align: center;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align:center;font-family:main;color:black;">INCIDENT '16</h1>
+	<h2 style="text-align:center;font-family:main;color:black;">THE LEGENDS AWAKEN</h2>
+	<h2 style="text-align:center;font-family:main;color:black;">March 2 - 6</h2>
+	<div class="btn_con"><a href="#" id="Mammoth" class="myButton" style="font-family:Cursive" onclick="myFunc(this.id)">Register</a></div>
+	<div class="btn_con"><a href="#" id="Dragon" class="myButton" style="font-family:Cursive" onclick="myFunc(this.id)">Events</a></div>
+	<div class="btn_con"><a href="#" id="Statue" class="myButton" style="font-family:Cursive" onclick="myFunc(this.id)">Contact Us</a></div>
+	<div class="btn_con"><a href="#" id="Tent" class="myButton" style="font-family:Cursive" onclick="myFunc(this.id)">Sponsors</a></div>
+	<div class="btn_con"><a href="#" id="Scroll" class="myButton" style="font-family:Cursive" onclick="myFunc(this.id)">iCare</a></div>
+	<div class="btn_con"><a href="#" id="Castle" class="myButton" style="font-family:Cursive" onclick="myFunc(this.id)">Pronites</a></div>
+	<div class="btn_con"><a href="#" id="Hospitality" class="myButton" style="font-family:Cursive" onclick="myFunc(this.id)">Hospitality</a></div>
+
+	<div id="modal" class="myModal" style="display:none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">x</span>
+                <h2 id="heading"></h2>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <h3>Incident '16</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/contents.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	<script src="js/legacy.min.js"></script>
+	<script src="js/custombox.min.js"></script>
+	<script>
+		function myFunc(id) {
+			document.getElementById('heading').innerHTML = heading[id];
+			document.getElementsByClassName('modal-body')[0].innerHTML = content[id];
+			Custombox.open({
+                target: '#modal',
+                effect: 'fadein'
+            });
+            $('span.close').on('click', function() {
+		        Custombox.close();
+		    });
+		}            
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl grass_02
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.045440 0.202354 0.132516
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
